@@ -24,7 +24,11 @@ return new class extends Migration
 
         if (Schema::hasTable('assets') && Schema::hasColumn('assets', 'pic_user_id')) {
             Schema::table('assets', function (Blueprint $table) {
-                $table->dropIndex('assets_pic_user_id_index');
+                // Cukup drop kolom — MySQL otomatis menghapus index yang
+                // melekat padanya. Index bernama assets_pic_user_id_index
+                // tidak selalu ada pada instalasi yang dibuat fresh dari
+                // rantai migration (mis. sagansa_test), sehingga dropIndex
+                // eksplisit bisa gagal (errno 1091).
                 $table->dropColumn('pic_user_id');
             });
         }

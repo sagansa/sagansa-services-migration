@@ -45,12 +45,13 @@ HTML,
         ],
         'SK' => [
             'name' => 'Default Surat Keputusan',
-            'placeholders' => ['nomor', 'tanggal', 'isi', 'penandatangan'],
+            'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
 <h1>SURAT KEPUTUSAN</h1>
 <h2>Nomor: {{nomor}}</h2>
 <p>Yang bertanda tangan di bawah ini, bertindak untuk dan atas nama PT Sagansa, berdasarkan pertimbangan sebagaimana tercantum dalam berkas resmi perusahaan,</p>
-<p>dengan ini <strong>MEMUTUSKAN</strong> dan <strong>MENETAPKAN</strong>:</p>
+<p>dengan ini <strong>MEMUTUSKAN</strong> dan <strong>MENETAPKAN</strong> keputusan berikut, yang berlaku bagi:</p>
+<p>{{penerima}}</p>
 <ol>
 <li>{{isi}}</li>
 </ol>

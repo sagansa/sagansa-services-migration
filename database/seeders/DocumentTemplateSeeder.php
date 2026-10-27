@@ -102,7 +102,7 @@ HTML,
 <p>{{penerima}}</p>
 <p>di tempat</p>
 <p>Dengan hormat,</p>
-<p>bersama surat ini kami sampaikan dengan hormat hal-hal sebagai berikut:</p>
+<p>bersama surat ini kami sampaikan hal-hal sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Demikian Surat Pengantar ini kami buat untuk dipergunakan sebagaimana mestinya. Atas perhatian dan kerja sama Bapak/Ibu, kami mengucapkan terima kasih.</p>
 <p>{{tanggal}}</p>
@@ -120,7 +120,7 @@ HTML,
 <p>{{penerima}}</p>
 <p>di tempat</p>
 <p>Dengan hormat,</p>
-<p>dengan ini kami mengundang Bapak/Ibu untuk hadir pada acara dengan ketentuan sebagai berikut:</p>
+<p>Dengan ini kami mengundang Bapak/Ibu untuk hadir pada acara dengan ketentuan sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Mengingat pentingnya acara tersebut, kami mengharapkan kehadiran Bapak/Ibu tepat pada waktunya. Atas perhatian dan kesediaan hadir Bapak/Ibu, kami mengucapkan terima kasih.</p>
 <p>{{tanggal}}</p>
@@ -138,7 +138,7 @@ HTML,
 <p>{{penerima}}</p>
 <p>di tempat masing-masing</p>
 <p>Dengan hormat,</p>
-<p>dengan ini kami sampaikan hal-hal sebagai berikut:</p>
+<p>Dengan ini kami sampaikan hal-hal sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Demikian Surat Edaran ini kami sampaikan untuk menjadi perhatian dan dilaksanakan sebagaimana mestinya.</p>
 <p>Dikeluarkan pada: {{tanggal}}</p>

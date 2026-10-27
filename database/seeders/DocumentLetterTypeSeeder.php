@@ -15,7 +15,9 @@ class DocumentLetterTypeSeeder extends Seeder
 {
     /**
      * 11 jenis surat standar perusahaan. Hanya KUA yang punya definisi
-     * `specific_fields` (penerima kuasa + masa berlaku kuasa).
+     * `specific_fields` (penerima kuasa + masa berlaku kuasa) — bentuk
+     * LIST kanonik `[{key, label}]` (kontrak parser mobile; dulu object
+     * bersarang → field KUA tak pernah muncul di wizard Flutter).
      *
      * @var array<int, array{code: string, name: string, specific_fields: array|null}>
      */
@@ -34,15 +36,10 @@ class DocumentLetterTypeSeeder extends Seeder
             'code' => 'KUA',
             'name' => 'Surat Kuasa',
             'specific_fields' => [
-                'penerima_kuasa' => [
-                    'nama' => '',
-                    'nik' => '',
-                    'alamat' => '',
-                ],
-                'masa_berlaku' => [
-                    'mode' => 'hingga_tanggal|selesai_urusan|tanpa_batas',
-                    'tanggal' => null,
-                ],
+                ['key' => 'penerima_kuasa_nama', 'label' => 'Nama Penerima Kuasa'],
+                ['key' => 'penerima_kuasa_nik', 'label' => 'NIK'],
+                ['key' => 'penerima_kuasa_alamat', 'label' => 'Alamat'],
+                ['key' => 'masa_berlaku', 'label' => 'Masa Berlaku'],
             ],
         ],
     ];

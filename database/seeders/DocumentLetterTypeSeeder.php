@@ -32,6 +32,9 @@ class DocumentLetterTypeSeeder extends Seeder
         ['code' => 'BA', 'name' => 'Berita Acara', 'specific_fields' => null],
         ['code' => 'PK', 'name' => 'Surat Perjanjian', 'specific_fields' => null],
         ['code' => 'REC', 'name' => 'Surat Rekomendasi', 'specific_fields' => null],
+        // Balasan atas surat masuk dari instansi/pihak lain — mis. SP2DK,
+        // teguran, atau permintaan penjelasan dari DJP.
+        ['code' => 'STG', 'name' => 'Surat Tanggapan', 'specific_fields' => null],
         [
             'code' => 'KUA',
             'name' => 'Surat Kuasa',

@@ -197,6 +197,23 @@ HTML,
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
         ],
+        'STG' => [
+            'name' => 'Default Surat Tanggapan',
+            'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
+            'body_html' => <<<'HTML'
+<h1>SURAT TANGGAPAN</h1>
+<h2>Nomor: {{nomor}}</h2>
+<p>Kepada</p>
+<p>{{penerima}}</p>
+<p>Dengan hormat,</p>
+<p>Menindaklanjuti surat Saudara yang kami terima, bersama ini kami sampaikan tanggapan dan penjelasan sebagai berikut:</p>
+<p>{{isi}}</p>
+<p>Demikian tanggapan ini kami sampaikan. Atas perhatian dan kerja sama Saudara, kami ucapkan terima kasih.</p>
+<p>{{tanggal}}</p>
+<p>Hormat kami,</p>
+<p><strong>{{penandatangan}}</strong></p>
+HTML,
+        ],
         'KUA' => [
             'name' => 'Default Surat Kuasa',
             'placeholders' => [

@@ -30,15 +30,12 @@ class DocumentTemplateSeeder extends Seeder
             'name' => 'Default Surat Tugas',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT TUGAS</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Yang bertanda tangan di bawah ini, bertindak untuk dan atas nama PT Sagansa, dengan ini memberikan tugas kepada:</p>
 <p>{{penerima}}</p>
 <p>untuk melaksanakan tugas dengan rincian sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Pelaksana tugas diwajibkan menunaikan tugas tersebut dengan penuh tanggung jawab dan segera melaporkan hasil pelaksanaannya kepada pimpinan setelah tugas selesai.</p>
 <p>Demikian Surat Tugas ini dibuat untuk dilaksanakan sebagaimana mestinya.</p>
-<p>{{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -47,8 +44,6 @@ HTML,
             'name' => 'Default Surat Keputusan',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT KEPUTUSAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Yang bertanda tangan di bawah ini, bertindak untuk dan atas nama PT Sagansa, berdasarkan pertimbangan sebagaimana tercantum dalam berkas resmi perusahaan,</p>
 <p>dengan ini <strong>MEMUTUSKAN</strong> dan <strong>MENETAPKAN</strong> keputusan berikut, yang berlaku bagi:</p>
 <p>{{penerima}}</p>
@@ -56,7 +51,6 @@ HTML,
 <li>{{isi}}</li>
 </ol>
 <p>Keputusan ini berlaku terhitung sejak tanggal ditetapkan. Apabila di kemudian hari terdapat kekeliruan dalam penetapan ini, akan dilakukan perbaikan sebagaimana mestinya.</p>
-<p>Ditetapkan pada: {{tanggal}}</p>
 <p>PT Sagansa</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -65,14 +59,11 @@ HTML,
             'name' => 'Default Surat Pernyataan',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT PERNYATAAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Saya yang bertanda tangan di bawah ini:</p>
 <p>{{penerima}}</p>
 <p>dengan ini menyatakan dengan sesungguhnya bahwa:</p>
 <p>{{isi}}</p>
 <p>Demikian pernyataan ini saya buat dengan sebenar-benarnya, dalam keadaan sadar, tanpa paksaan dari pihak mana pun. Apabila di kemudian hari pernyataan ini terbukti tidak benar, saya bersedia mempertanggungjawabkannya sesuai dengan ketentuan yang berlaku.</p>
-<p>{{tanggal}}</p>
 <p>Yang Membuat Pernyataan,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -81,13 +72,10 @@ HTML,
             'name' => 'Default Surat Keterangan',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT KETERANGAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Yang bertanda tangan di bawah ini, bertindak untuk dan atas nama PT Sagansa, dengan ini menerangkan dengan sebenarnya bahwa:</p>
 <p>{{penerima}}</p>
 <p>{{isi}}</p>
 <p>Surat Keterangan ini dibuat berdasarkan keadaan yang sebenarnya dan dipergunakan sebagaimana mestinya oleh pihak-pihak yang berkepentingan.</p>
-<p>Dikeluarkan pada: {{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -96,8 +84,6 @@ HTML,
             'name' => 'Default Surat Pengantar',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT PENGANTAR</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Kepada Yth.</p>
 <p>{{penerima}}</p>
 <p>di tempat</p>
@@ -105,7 +91,6 @@ HTML,
 <p>bersama surat ini kami sampaikan hal-hal sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Demikian Surat Pengantar ini kami buat untuk dipergunakan sebagaimana mestinya. Atas perhatian dan kerja sama Bapak/Ibu, kami mengucapkan terima kasih.</p>
-<p>{{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -114,8 +99,6 @@ HTML,
             'name' => 'Default Surat Undangan',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT UNDANGAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Kepada Yth.</p>
 <p>{{penerima}}</p>
 <p>di tempat</p>
@@ -123,7 +106,6 @@ HTML,
 <p>Dengan ini kami mengundang Bapak/Ibu untuk hadir pada acara dengan ketentuan sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Mengingat pentingnya acara tersebut, kami mengharapkan kehadiran Bapak/Ibu tepat pada waktunya. Atas perhatian dan kesediaan hadir Bapak/Ibu, kami mengucapkan terima kasih.</p>
-<p>{{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -132,8 +114,6 @@ HTML,
             'name' => 'Default Surat Edaran',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT EDARAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Kepada seluruh:</p>
 <p>{{penerima}}</p>
 <p>di tempat masing-masing</p>
@@ -141,7 +121,6 @@ HTML,
 <p>Dengan ini kami sampaikan hal-hal sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Demikian Surat Edaran ini kami sampaikan untuk menjadi perhatian dan dilaksanakan sebagaimana mestinya.</p>
-<p>Dikeluarkan pada: {{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -150,8 +129,6 @@ HTML,
             'name' => 'Default Berita Acara',
             'placeholders' => ['nomor', 'tanggal', 'hadir_rapat', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>BERITA ACARA</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Pada hari ini, {{tanggal}}, telah berlangsung rapat yang diselenggarakan oleh PT Sagansa dan dihadiri oleh:</p>
 <p>{{hadir_rapat}}</p>
 <p>Rapat tersebut membahas dan menyepakati hal-hal sebagai berikut:</p>
@@ -165,8 +142,6 @@ HTML,
             'name' => 'Default Surat Perjanjian',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT PERJANJIAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Pada hari ini, {{tanggal}}, telah dibuat dan disepakati Surat Perjanjian oleh dan antara:</p>
 <p><strong>Pihak Pertama</strong></p>
 <p>PT Sagansa</p>
@@ -185,14 +160,11 @@ HTML,
             'name' => 'Default Surat Rekomendasi',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT REKOMENDASI</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Yang bertanda tangan di bawah ini, bertindak untuk dan atas nama PT Sagansa, dengan ini memberikan rekomendasi kepada:</p>
 <p>{{penerima}}</p>
 <p>berdasarkan pertimbangan sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Surat Rekomendasi ini diberikan untuk dipergunakan sebagaimana mestinya dan tidak mengurangi tanggung jawab pihak penerima rekomendasi dalam melaksanakan kewajibannya.</p>
-<p>Diberikan pada: {{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -201,15 +173,12 @@ HTML,
             'name' => 'Default Surat Tanggapan',
             'placeholders' => ['nomor', 'tanggal', 'penerima', 'isi', 'penandatangan'],
             'body_html' => <<<'HTML'
-<h1>SURAT TANGGAPAN</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Kepada</p>
 <p>{{penerima}}</p>
 <p>Dengan hormat,</p>
 <p>Menindaklanjuti surat Saudara yang kami terima, bersama ini kami sampaikan tanggapan dan penjelasan sebagai berikut:</p>
 <p>{{isi}}</p>
 <p>Demikian tanggapan ini kami sampaikan. Atas perhatian dan kerja sama Saudara, kami ucapkan terima kasih.</p>
-<p>{{tanggal}}</p>
 <p>Hormat kami,</p>
 <p><strong>{{penandatangan}}</strong></p>
 HTML,
@@ -227,8 +196,6 @@ HTML,
                 'penandatangan',
             ],
             'body_html' => <<<'HTML'
-<h1>SURAT KUASA</h1>
-<h2>Nomor: {{nomor}}</h2>
 <p>Pada hari ini, {{tanggal}}, yang bertanda tangan di bawah ini:</p>
 <p>{{penandatangan}}</p>
 <p>selaku <strong>Pemberi Kuasa</strong>, dengan ini memberikan kuasa kepada:</p>
